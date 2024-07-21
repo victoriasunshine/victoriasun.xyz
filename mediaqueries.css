@@ -39,6 +39,9 @@
     #sidebar{
         display:none;
     }
+    #side-content{
+        display:none;
+    }
     #container{
         grid-template-columns: 1fr;
         padding:1rem;

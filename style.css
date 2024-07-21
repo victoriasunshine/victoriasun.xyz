@@ -158,15 +158,21 @@ a:hover{
     border-radius: 75px;
 }
 
-
+/*SIDEBAR*/
 #sidebar{  
-    position: sticky;
-    top:0;
-    margin-top:5rem;
+    position: -webkit-sticky;
+    position:sticky;
     max-width: 300px; 
     margin-left: 5rem;
     margin-right:2rem;
-    
+    top:3rem;
+}
+#side-content{
+    #page-wrap { 
+        width: 600px; 
+        margin: 5px auto; 
+        position: relative; 
+      }
 }
 
 #sidebar ul{
@@ -177,6 +183,11 @@ a:hover{
         margin-right: 0;
         padding-left: 40px;
       }
+}
+
+#sidebar .details-container{
+    padding-left: 3rem;
+    padding-right:3rem;
 }
 
 #container{
