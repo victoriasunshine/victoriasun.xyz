@@ -28,14 +28,27 @@ a, .btn{
 }
 
 /* DESKTOP NAV */
+#nav-container{
+    background-color:white;
+    position:sticky;
+}
+
 nav, .nav-links{
     display: flex;
 }
+.gap{
+    height:13vh;
+}
 
 nav{
+    background-color: white;
+    z-index:1;
     justify-content: space-around;
     align-items: center;
-    height: 15vh;
+    height: 13vh;
+    position:-webkit-sticky;
+    position:sticky;
+    top:0;
 }
 
 .nav-links{
@@ -162,17 +175,16 @@ a:hover{
 #sidebar{  
     position: -webkit-sticky;
     position:sticky;
-    max-width: 300px; 
-    margin-left: 5rem;
-    margin-right:2rem;
-    top:3rem;
+    max-width: 375px; 
+    margin-left: 3rem;
+    margin-right:3rem;
+    top:7rem;
 }
 #side-content{
-    #page-wrap { 
-        width: 600px; 
-        margin: 5px auto; 
+        width: 500px; 
+        margin: 5px;
         position: relative; 
-      }
+
 }
 
 #sidebar ul{
@@ -185,9 +197,17 @@ a:hover{
       }
 }
 
-#sidebar .details-container{
+#sidebar .todo-container{
     padding-left: 3rem;
     padding-right:3rem;
+}
+.todo-container{
+    border-radius: 2rem;
+    border: rgb(255, 153, 206) 0.2rem solid;
+    padding: 1.5rem;
+    border-width: 2px;
+    padding:1rem;
+    flex:1;
 }
 
 #container{
@@ -367,12 +387,19 @@ section{
     display:block;
     
 }
-.icon-arrow{
+.arrows{
     position:absolute;
     right:-5rem;
     bottom:2.5 rem;
+    display:block;
+}
+
+.icon-arrow-u, .icon-arrow-d{
     height:2rem;
     width:3rem;
+}
+.icon-arrow-u{
+    rotate:180deg;
 }
 .section-container .icon{
     cursor:default;
@@ -451,4 +478,12 @@ section{
 }
 #projects .details-container{
     width: 30%;
+}
+
+/* CONTACTS */
+#contact{
+    position:relative;
+    gap:10vh;
+    height:100vh;
+    gap:5rem;
 }

@@ -78,12 +78,12 @@
                 <br/>
                 <img src="./assets/openingImage.jpg" alt="me holding a cactus" id="profilepic">
                 <h3><i>20 JULY 2024 STATUS UPDATE</i></h2>
-                <div class="color-container details-container">
+                <div class="color-container todo-container">
                     <div class="section-container">
                         <img src="./assets/pngtree-pink-heart-shape-with-drops-and-splashes-isolated-on-white-background-png-image_11380794.png"
                                 alt="heart"
                                 class="icon"/>
-                        <p style="text-align:center;"style="font-weight: 600;">Current</p>
+                        <p style="font-weight: 600;">Current</p>
                         <img src="./assets/pngtree-pink-heart-shape-with-drops-and-splashes-isolated-on-white-background-png-image_11380794.png"
                                     alt="heart"
                                     class="icon"/>
@@ -103,32 +103,35 @@
                     </ul>
                 </div>
                 <br/>
-                <div class="section-container">
-                    <img src="./assets/pngtree-pink-heart-shape-with-drops-and-splashes-isolated-on-white-background-png-image_11380794.png"
-                            alt="heart"
-                            class="icon"/>
-                    <p style="text-align:center;"style="font-weight: 600;">Summer Plans</p>
-                    <img src="./assets/pngtree-pink-heart-shape-with-drops-and-splashes-isolated-on-white-background-png-image_11380794.png"
+                <div class="later">
+                    <div class="section-container">
+                        <img src="./assets/pngtree-pink-heart-shape-with-drops-and-splashes-isolated-on-white-background-png-image_11380794.png"
                                 alt="heart"
                                 class="icon"/>
+                        <p style="text-align:center;"style="font-weight: 600;">Summer Plans</p>
+                        <img src="./assets/pngtree-pink-heart-shape-with-drops-and-splashes-isolated-on-white-background-png-image_11380794.png"
+                                    alt="heart"
+                                    class="icon"/>
+                    </div>
+                    <ul>
+                        <li>beef up portfolio</li>
+                            <ul>
+                                <li>online closet</li>
+                                <li>search for even more projects</li>
+                            </ul>
+                        </li>
+                        <li>create resume</li>
+                        <li>apply for tutoring at ivc</li>
+                        
+                        <li>run ubuntu on the hp laptop</li>
+                        <li>create a home server on moms old monitor</li>
+                    </ul>
                 </div>
-                <ul>
-                    <li>beef up portfolio</li>
-                        <ul>
-                            <li>online closet</li>
-                            <li>search for even more projects</li>
-                        </ul>
-                    </li>
-                    <li>create resume</li>
-                    <li>apply for tutoring at ivc</li>
-                    
-                    <li>run ubuntu on the hp laptop</li>
-                    <li>create a home server on moms old monitor</li>
-                </ul>
             </div>
         </aside>
         <main>
             <section id="about">
+                <div class="gap"></div>
                 <p class="section__text__p1">Get To Know More</p>
                 <h1 class="title">About Me</h1>
                 <div class="section-container">
@@ -160,10 +163,13 @@
                 </div>
                 <br/>
                 <p>//description of me//</p>
-                <img src = "./assets/image.png" alt="arrow" class="icon-arrow"
-                onclick="location.href='./#experience'" />
+                <div class="arrows">
+                    <img src = "./assets/image.png" alt="arrow" class="icon-arrow-d"
+                    onclick="location.href='./#experience'" />
+                </div>
             </section>
             <section id="experience">
+                <div class="gap"></div>
                 <p class="section__text__p1">Explore My</p>
                 <h1 class="title">Experience</h1>
                 <div class="experience-details-container">
@@ -291,10 +297,15 @@
                         </div>
                     </div>
                 </div>
-                <img src = "./assets/image.png" alt="arrow" class="icon-arrow"
-                onclick="location.href='./#projects'" />
+                <div class="arrows">
+                    <img src = "./assets/image.png" alt="arrow" class="icon-arrow-u"
+                    onclick="location.href='./#about'" />
+                    <img src = "./assets/image.png" alt="arrow" class="icon-arrow-d"
+                    onclick="location.href='./#projects'" />
+                </div>
             </section>
             <section id="projects">
+                <div class="gap"></div>
                 <p class="section__text__p1">Browse My Recent</p>
                 <p class="title">Projects</p>
                 <div class="experience-details-container">
@@ -341,8 +352,26 @@
                         </div>
                     </div>
                 </div>
-                <img src = "./assets/image.png" alt="arrow" class="icon-arrow"
-                onclick="location.href='./#contact'" />
+                <div class="arrows">
+                    <img src = "./assets/image.png" alt="arrow" class="icon-arrow-u"
+                    onclick="location.href='./#experience'" />
+                    <img src = "./assets/image.png" alt="arrow" class="icon-arrow-d"
+                    onclick="location.href='./#contact'" />
+                </div>
+            </section>
+            <section id="contact">
+                <div class="gap"></div>
+                <p class="section__text__p1">Get in Touch</p>
+                <p class="title">Contact Me</p>
+                <div class="contact-info-upper-container">
+                    <div class="contact-info-container">
+                        <!--email, discord, phone number-->
+                    </div>
+                </div>
+                <div class="arrows">
+                    <img src = "./assets/image.png" alt="arrow" class="icon-arrow-u"
+                    onclick="location.href='./#projects'" style="padding:4rem;" />
+                </div>
             </section>
         </main>
     </div>
