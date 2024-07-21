@@ -1,0 +1,48 @@
+@media screen and (max-width: 800px){
+    #desktop-nav{
+        display: none;
+    }
+    #hamburger-nav{
+        display: flex;
+    }
+    
+    .section__pic-container{
+        display:none
+    }
+    #profile{
+        display:block;
+        height:40vh;
+    }
+    .about-containers{
+        display:block;
+    }
+    .section-container-t{
+        display:flex;
+    }
+    .details-container{
+    padding:1rem;
+    text-align: left;
+    margin: 1rem;
+    }
+    #about{
+        height:100vh;
+    }
+    .icon-arrow{
+        display:none;
+    }
+    #experience{
+        height:150vh;
+    }
+}
+
+@media screen and (max-width:1200px){
+    #sidebar{
+        display:none;
+    }
+    #container{
+        grid-template-columns: 1fr;
+        padding:1rem;
+    }
+    
+}
+
