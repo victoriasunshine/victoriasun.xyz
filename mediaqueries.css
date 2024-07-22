@@ -6,10 +6,7 @@
     #hamburger-nav{
         display: flex;
     }
-    section{
-        padding:0.5rem;
-        max-width:fit-content;
-    }
+    
     .section__pic-container{
         display:none
     }
@@ -34,8 +31,7 @@
         height:80vh;
     }
     #about .section-container{
-        gap:0.5rem;
-        display:flex;
+       display:flex;
         flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
