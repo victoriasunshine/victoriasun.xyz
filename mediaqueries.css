@@ -1,11 +1,15 @@
 @media screen and (max-width: 800px){
+ 
     #desktop-nav{
         display: none;
     }
     #hamburger-nav{
         display: flex;
     }
-    
+    section{
+        padding:0.5rem;
+        max-width:fit-content;
+    }
     .section__pic-container{
         display:none
     }
@@ -15,17 +19,31 @@
     }
     .about-containers{
         display:block;
+        
     }
     .section-container-t{
         display:flex;
+        
     }
     .details-container{
-    padding:1rem;
-    text-align: left;
-    margin: 1rem;
+        padding:1rem;
+        text-align: left;
+        margin: 1rem;
     }
     #about{
-        height:100vh;
+        height:80vh;
+    }
+    #about .section-container{
+        gap:0.5rem;
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .about-pic{
+        height:100px;
+        width:100px;
     }
     .icon-arrow-u, .icon-arrow-d{
         display:none;
@@ -36,9 +54,23 @@
     .gap{
         display:none;
     }
-    
+   
+    #contact{
+        gap:0.5rem;
+    }
+    .contact-info-upper-container, .contact-info-container{
+        display:block;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    #container{
+        display:none;
+    }
+    #smaller-screen{
+        display:flex;
+    }
 }
-
 @media screen and (max-width:1200px){
     #sidebar{
         display:none;
