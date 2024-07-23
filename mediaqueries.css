@@ -27,7 +27,7 @@
         text-align: left;
         margin: 1rem;
     }
-    #about{
+    #ssabout{
         height:80vh;
     }
     #about .section-container{
@@ -44,14 +44,11 @@
     .icon-arrow-u, .icon-arrow-d{
         display:none;
     }
-    #experience{
+    #ssexperience{
         height:130vh;
     }
-    .gap{
-        display:none;
-    }
    
-    #contact{
+    #sscontact{
         gap:0.5rem;
     }
     .contact-info-upper-container, .contact-info-container{
@@ -65,6 +62,9 @@
     }
     #smaller-screen{
         display:flex;
+    }
+    .nav-links-container {
+        display:none;
     }
 }
 @media screen and (max-width:1200px){

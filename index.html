@@ -31,10 +31,10 @@
                 <span></span>
             </div>
             <div class="menu-links">
-                    <li><a href="#about" onclick="togglemenu()">About</a></li>
-                    <li><a href="#experience" onclick="togglemenu()">Experience</a></li>
-                    <li><a href="#projects" onclick="togglemenu()">Projects</a></li>
-                    <li><a href="#contact" onclick="togglemenu()">Contact</a></li>
+                    <li onclick="togglemenu()"><a href="./#ssabout">About</a></li>
+                    <li onclick="togglemenu()"><a href="./#ssexperience">Experience</a></li>
+                    <li onclick="togglemenu()"><a href="./#ssprojects">Projects</a></li>
+                    <li onclick="togglemenu()"><a href="./#sscontact">Contact</a></li>
             </div>
         </div>
     </nav>
@@ -358,7 +358,7 @@
     </div>
     <div id=smaller-screen>
         <div>
-            <section id="about">
+            <section id="ssabout">
                 <div class="gap"></div>
                 <p class="section__text__p1">Get To Know More</p>
                 <h1 class="title">About Me</h1>
@@ -396,7 +396,7 @@
                     onclick="location.href='./#experience'" />
                 </div>
             </section>
-            <section id="experience">
+            <section id="ssexperience">
                 <div class="gap"></div>
                 <p class="section__text__p1">Explore My</p>
                 <h1 class="title">Experience</h1>
@@ -496,7 +496,7 @@
                     onclick="location.href='./#projects'" />
                 </div>
             </section>
-            <section id="projects">
+            <section id="ssprojects">
                 <div class="gap"></div>
                 <p class="section__text__p1">Browse My Recent</p>
                 <p class="title">Projects</p>
@@ -551,7 +551,7 @@
                     onclick="location.href='./#contact'" />
                 </div>
             </section>
-            <section id="contact">
+            <section id="sscontact">
                 <div class="gap"></div>
                 <p class="section__text__p1">Get in Touch</p>
                 <p class="title" style="color:rgb(255, 203, 206);">Contact Me</p>
@@ -600,3 +600,8 @@
     <script src="script.js"></script>
 </body>
 </html>
+
+<!--
+- fix hamburger menu links
+- fix spacing on contact
+-->
