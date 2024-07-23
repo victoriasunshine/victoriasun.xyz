@@ -54,7 +54,7 @@ nav{
     gap: 2rem;
     list-style: none;
     font-size: 1, 5rem;
-}
+}  
 
 a{
     color:black;
@@ -519,9 +519,20 @@ section{
 footer{
     height:26vh;
     margin: 0 1rem;
+    text-align:center;
 }
 
 footer p{
     text-align: center;
+}
+
+.img-gh{
+    height:2rem;
+    margin:2rem;
+    align-self:center;
+
+}
+.img-gh:hover{
+    cursor:pointer;
 }
 
