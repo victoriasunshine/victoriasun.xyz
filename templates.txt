@@ -1,0 +1,92 @@
+/****************************/
+/*     BUTTON CONTAINER     */
+/****************************/
+<div class="btn-container">
+                <button 
+                class="btn btn-color-#" 
+                onclick="window.open()">
+                text
+                </button>
+                <button
+                class="btn btn-color-#"
+                onclick="location.href=''"
+            </div>
+
+/*****************************/
+/*     SOCIALS CONTAINER     */
+/*****************************/
+<div id="socials-container">
+    <img src="" 
+    alt=""
+    class="icon" onclick="window.open('')">
+    <img src="" 
+    alt=""
+    class="icon" onclick="window.open('')">
+    <img src="" 
+    alt=""
+    class="icon" onclick="window.open('')">
+</div>
+
+/*******************************/
+/*     EXPERIENCE CONTAINER    */
+/*******************************/
+<div class="details-container">
+    <div class="section-container-t">
+        <img src="./assets/pngtree-pink-heart-shape-with-drops-and-splashes-isolated-on-white-background-png-image_11380794.png"
+        alt="heart"
+        class="icon"/>
+        <h3>heading</h3>
+    </div>
+    <p><em style="font-weight: 600;">subtitle</em> 
+        <br/>details</p>
+</div>
+
+/*******************************/
+/*     EXPERIENCE CONTAINER    */
+/*******************************/
+<div class="details-container">
+    <h2 class="experience-sub-title">text</h2>
+    <div class="article-container">
+        <article>
+            <div>
+                <h3>topic</h3>
+                <p>status</p>
+            </div>
+        </article><article>
+            <div>
+                <h3>topic</h3>
+                <p>status</p>
+            </div>
+        </article><article>
+            <div>
+                <h3>topic</h3>
+                <p>status</p>
+            </div>
+        </article><article>
+            <div>
+                <h3>topic</h3>
+                <p>status</p>
+            </div>
+        </article>
+    </div>
+</div>
+
+/****************************/
+/*     PROJECT CONTAINER    */
+/****************************/
+<div class="details-container color-container"> 
+    <div class="article-container">
+        <img src="" 
+        alt="" 
+        class=""/>
+    </div>
+    <h2 class="experience-sub-title project-title">Project Name</h2>
+    <div class="btn-container>">
+        <button class="btn btn-color-2 project-btn"
+        onclick="window.open('')""> Github
+        </button>
+        <button class="btn btn-color-1 project-btn"
+        onclick="window.open('')""> Live Demo
+        </button>
+    </div>
+</div>
