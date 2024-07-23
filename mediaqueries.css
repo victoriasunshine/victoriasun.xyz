@@ -27,7 +27,7 @@
         text-align: left;
         margin: 1rem;
     }
-    #ssabout{
+    #about{
         height:80vh;
     }
     #about .section-container{
@@ -44,11 +44,14 @@
     .icon-arrow-u, .icon-arrow-d{
         display:none;
     }
-    #ssexperience{
+    #experience{
         height:130vh;
     }
+    #projects{
+        height:100vh;
+    }
    
-    #sscontact{
+    #contact{
         gap:0.5rem;
     }
     .contact-info-upper-container, .contact-info-container{
@@ -58,11 +61,9 @@
         text-align: center;
     }
     #container{
-        display:none;
-    }
-    #smaller-screen{
         display:flex;
     }
+   
     .nav-links-container {
         display:none;
     }
