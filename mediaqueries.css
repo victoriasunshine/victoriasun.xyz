@@ -31,7 +31,7 @@
         height:130vh;
     }
     #about .section-container{
-       display:flex;
+        display:flex;
         flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
@@ -50,6 +50,15 @@
     #projects{
         height:100vh;
     }
+    #projects .details-container{
+        text-align: center;
+    }
+    #projects .btn{
+        text-align:center;
+        align-items: center;
+        margin: 0.5rem;
+    }
+
    
     #contact{
         gap:0.5rem;
