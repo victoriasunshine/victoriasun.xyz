@@ -28,7 +28,7 @@
         margin: 1rem;
     }
     #about{
-        height:80vh;
+        height:130vh;
     }
     #about .section-container{
        display:flex;
@@ -62,10 +62,17 @@
     }
     #container{
         display:flex;
+        padding:0;
+        margin: 0rem;
     }
    
     .nav-links-container {
         display:none;
+    }
+    #sidebar{
+        display:none;
+        padding:0;
+        margin:0;
     }
 }
 @media screen and (max-width:1200px){
