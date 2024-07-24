@@ -94,8 +94,8 @@ a:hover{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 20px;
-    width: 28px;
+    height: 24px;
+    width: 30px;
     cursor: pointer;
 }
 
