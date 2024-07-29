@@ -20,6 +20,9 @@
     .about-containers{
         flex-wrap:wrap;
     }
+    .btn {
+        margin:0.25rem;
+    }
 }
 @media screen and (max-width:1200px){
     #sidebar{
