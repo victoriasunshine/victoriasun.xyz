@@ -478,9 +478,9 @@ section{
 /* CONTACTS */
 #contact{
     position:relative;
-    gap:10vh;
+    margin-top:10vh;
     height:70vh;
-    gap:5rem;
+    gap:2rem;
     justify-content:center;
     flex-direction: column;
     display:flex;
