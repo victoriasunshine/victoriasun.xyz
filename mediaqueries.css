@@ -1,228 +1,469 @@
 
-
-
-
 @media screen and (max-width:1600px){
+
     .later{
+
         display:none;
+
     }
+
     #side-content{
+
         width:300px;
+
     }
-    
+
+
+
+
 }
+
 @media screen and (max-width:1400px){
+
     #profile{
+
         margin-top: 6rem;
+
         height: 40vh;
+
         margin-bottom:6rem;
+
     }
+
     .about-containers{
+
         flex-wrap:wrap;
-    }
-    .btn {
-        margin:0.25rem;
-    }
-}
-@media screen and (max-width:1200px){
-    #sidebar{
-        display:none;
-    }
-    #side-content{
-        display:none;
-    }
-    #container{
-        grid-template-columns: 1fr;
-        margin: 0 auto 2rem;
-    }
-    #experience{
-        margin-top:2rem;
-    }
-    .experience-details-container{
-        display: flex;
-        flex-wrap:wrap;
-        margin-top:2rem;
-    }
-    #profile, .section-container{
-        display:block;
-    }
-    .arrows{
-        display:none
-    }
-    section, .section-contaier{
-        height:fit content;
-    }
-    section{
-        margin:0 5%;
-    }
-    .section__pic-container{
-        width:275px;
-        height: 275px;
-        margin:0 auto 2rem;
-        padding: 2rem;
-    }
-    .about-containers{
-        margin-top:0;
-    }
-    .aboutpic{
-        margin:0 auto 2rem;
-    }
-    .btn-container{
-        gap:1rem;
+
     }
     .btn{
-        margin: 0.5rem;
+        margin:0.2rem;
     }
-   
-    
 }
-@media screen and (max-width: 800px){
-    #desktop-nav{
-        display: none;
+
+@media screen and (max-width:1200px){
+
+    #sidebar{
+
+        display:none;
+
     }
-    #hamburger-nav{
-        display: flex;
-        
+
+    #side-content{
+
+        display:none;
+
     }
+
     #container{
+
+        grid-template-columns: 1fr;
+
+        margin: 0 auto 2rem;
+
+    }
+
+    #experience{
+
+        margin-top:2rem;
+
+    }
+
+    .experience-details-container{
+
+        display: flex;
+
+        flex-wrap:wrap;
+
+        margin-top:2rem;
+
+    }
+
+    #profile, .section-container{
+
+        display:block;
+
+    }
+
+    .arrows{
+
+        display:none
+
+    }
+
+    section, .section-contaier{
+
+        height:fit content;
+
+    }
+
+    section{
+
+        margin:0 5%;
+
+    }
+
+    .section__pic-container{
+
+        width:275px;
+
+        height: 275px;
+
         margin:0 auto 2rem;
+
+        padding: 2rem;
+
     }
-    #profile{
-        display:block;
-        height:40vh;
-    }
+
     .about-containers{
-        display:block;
+
+        margin-top:0;
+
     }
-    .section-container{
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .details-container{
-        padding:1rem;
-        margin: 1rem;
-    }
+
     .aboutpic{
+
+        margin:0 auto 2rem;
+
+    }
+
+    .btn-container{
+
+        gap:1rem;
+
+    }
+
+    .btn{
+
+        margin: 0.5rem;
+
+    }
+
+
+
+
+
+
+
+}
+
+@media screen and (max-width: 800px){
+
+
+    #desktop-nav{
+
+        display: none;
+
+    }
+
+    #hamburger-nav{
+
+        display: flex;
+
+
+
+
+    }
+
+    #container{
+
+        margin:0 auto 2rem;
+
+
+    }
+
+    #profile{
+
+        display:block;
+
+        height:40vh;
+
+    }
+
+    .about-containers{
+
+        display:block;
+
+
+    }
+
+    .section-container{
+
+        display:flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+    }
+
+    .details-container{
+
+        padding:1rem;
+
+
+        margin: 1rem;
+
+    }
+
+    .aboutpic{
+
         height:200px;
+
         width:200px;
     }
+
     #about{
+
         height:170vh;
+
         padding-bottom: 6rem;
+
+
+
+
     }
+
     #experience{
+
         height: 150vh;
+
     }
+
     #projects{
+
         height: 150vh;
+
     }
+
     #contact{
+
         height:80vh;
+
     }
+
     .contact-info-upper-container, .btn-containter{
+
         flex-wrap:wrap;
+
+
+
     }
+
 }
+
 @media screen and (max-width:600px){
+
     #contact{
+
         height: 80vh;
+
     }
+
     footer{
+
         height:40vh;
+
     }
+
     #profile{
+
         height:83vh;
+
         margin-bottom:0;
+
     }
+
     article{
+
         font-size:1rem;
+
     }
+
     .footer-nav{
+
         height:fit content;
+
         margin-bottom:2rem;
+
+        flex-wrap:wrap;
+
+
+
+
+    }
+
+    .about-containers, .contact-info-upper-container, .btn-containter{
+
+        flex-wrap:wrap;
+
+
+
+
+    }
+
+    .contact-info-container{
+
+        margin:0.5;
+
+
+
+    }
+
+    .contact-info-container p, .nav-links li a{
+
+        font-size:1rem;
+
+    }
+
+    .experience-sub-title{
+
+        font-size: 1.25rem;
+
+    }
+
+    .logo{
+
+        font-size:1.5 rem;
+
+    }
+
+    .section__text__p2{
+
+        font-size: 1.25 rem;
+
+    }
+
+    .title{
+
+        font-size:2rem;
+
+    }
+
+    .text-container{
+
+        text-align:justify;
+
+
+
+
+    }
+
+    .section__pic-container{
+
+        display:none;
+
+    }
+
+
+
+
+}
+
+@media screen and (max-width:300px){
+
+    .hamburger-menu{
+
+        display:none;
+
+
+
+
+
+    }
+
+    body{
+
+        width:fit-content;
+
+    }
+
+    .title{
+
+        font-size:1.75rem;
+
+    }
+
+    .section__text__p2{
+
+        font-size:1.5rem;
+
+    }
+
+    .section__text__p1{
+
+        font-size: 0.75rem;
+
+    }
+
+    p{
+
+        font-size: 0.8rem;
+
+    }
+
+    .details-container{
+
+        padding: 0.5rem;
+
+        margin:0.5rem;
+
+    }
+
+    article{
+
+        font-size: 0.8rem;
+
+
+
+    }
+
+    .article-container{
+
+        gap:1.25rem;
+
+    }
+
+    .btn{
+
+        margin:0.25rem;
+
+
+    }
+
+    .experience-sub-title{
+
+        margin-bottom:0.5rem;
+
+    }
+
+    .nav-links{
+
+        display:none;
+
+    }
+
+    footer{
+
+        display:flex;
+
+        flex-direction:column;
+
         flex-wrap:wrap;
 
     }
-    .about-containers, .contact-info-upper-container, .btn-containter{
-        flex-wrap:wrap;
-    }
+
     .contact-info-container{
-        margin:0.5;
-    }
-    .contact-info-container p, .nav-links li a{
-        font-size:1rem;
-    }
-    .experience-sub-title{
-        font-size: 1.25rem;
-    }
-    .logo{
-        font-size:1.5 rem;
-    }
-    .section__text__p2{
-        font-size: 1.25 rem;
-    }
-    .title{
-        font-size:2rem;
-    }
-    .text-container{
-        text-align:justify;
-    
-    }
-    .section__pic-container{
-        display:none;
-    }
-    
-}
-@media screen and (max-width:300px){
-    .hamburger-menu{
-        display:none;
-    
-    }
-    body{
-        width:fit-content;
-    }
-    .title{
-        font-size:1.75rem;
-    }
-    .section__text__p2{
-        font-size:1.5rem;
-    }
-    .section__text__p1{
-        font-size: 0.75rem;
-    }
-    p{
-        font-size: 0.8rem;
-    }
-    .details-container{
-        padding: 0.5rem;
-        margin:0.5rem;
-    }
-    article{
-        font-size: 0.8rem;
-    }
-    .article-container{
-        gap:1.25rem;
-    }
-    .btn{
+
         margin:0.25rem;
-    }
-    .experience-sub-title{
-        margin-bottom:0.5rem;
-    }
-    .nav-links{
-        display:none;
-    }
-    footer{
-        display:flex;
-        flex-direction:column;
-        flex-wrap:wrap;
-    }
-    .contact-info-container{
-        margin:0.25rem;
+
         height:2rem;
+
     }
+
     .contact-info-container p{
+
         font-size: 0.7rem;
+
     }
+
 }
