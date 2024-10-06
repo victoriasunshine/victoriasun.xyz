@@ -1,5 +1,4 @@
-# base branch: ready for deployment
-this is the finished project. 
+# Status: Live
 ## portfolio
  personal website with all my information and projects
 
@@ -7,3 +6,8 @@ this is the finished project.
  - practice javascript, html, css
 
 ## todo
+ filled with my current aspirations
+
+ - projects
+ - goals
+ - topics to learn
