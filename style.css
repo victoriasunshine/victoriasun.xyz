@@ -164,8 +164,12 @@ a:hover{
 }
 
 #profilepic{
-    max-width: 150px;
+    width: 150px;
+    height: 150px;
     border-radius: 75px;
+    align-self: center;
+    
+    display:flex;
 }
 
 /*SIDEBAR*/
@@ -307,6 +311,7 @@ section{
 .btn-container{
     display: flex;
     justify-content: center;
+    
     gap:1rem;
 }
 
