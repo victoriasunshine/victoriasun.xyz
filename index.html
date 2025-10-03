@@ -77,46 +77,37 @@
     <div id="container">
         <aside id="side-content">
             <div id="sidebar"> 
-                <h1>My Projects and Information</h1>
-                <br/>
-                <img src="./assets/openingImage.jpg" alt="me holding a cactus" id="profilepic">
-                <h3><i>01 OCTOBER 2025 STATUS UPDATE</i></h2>
-                <div class="color-container todo-container">
-                    <div class="section-container">
-                        <img src="./assets/pngtree-pink-heart-shape-with-drops-and-splashes-isolated-on-white-background-png-image_11380794.png"
-                                alt="heart"
-                                class="icon"/>
-                        <p style="font-weight: 600;">Current</p>
-                        <img src="./assets/pngtree-pink-heart-shape-with-drops-and-splashes-isolated-on-white-background-png-image_11380794.png"
-                                    alt="heart"
-                                    class="icon"/>
-                    </div>
-                    <ul>
-                        <li>search for internships to apply to for Summer 2026</li>
-                        <li>projects
-                            <ul>
-                                <li>spotify - send a mixtape</li>
-                                <li>muon project paper for publication</li>
-                            </ul>
-                        </li>
-                    </ul>
+                <div class="section__pic-container_aside">
+                    <img src="./assets/Screenshot 2024-07-17 182944.png" alt="me" id="home"/>
                 </div>
-                <br/>
-                <div class="for later/hiatus">
-                    <div class="section-container">
-                        <img src="./assets/pngtree-pink-heart-shape-with-drops-and-splashes-isolated-on-white-background-png-image_11380794.png"
-                                alt="heart"
-                                class="icon"/>
-                        <p style="text-align:center;"style="font-weight: 600;">Later</p>
-                        <img src="./assets/pngtree-pink-heart-shape-with-drops-and-splashes-isolated-on-white-background-png-image_11380794.png"
-                                    alt="heart"
-                                    class="icon"/>
-                    </div>
-                    <ul>
-                        <li>OC Fair finder</li>
-                        <li>Productivity Extension</li>
-                    </ul>
-                </div>
+        <div class="section__text">
+            <p class="section__text__p1"> Hello, I'm </p>
+            <h1 class="title" style="font-size: 2em">Victoria Sun</h1>
+            <p class="section__text__p2" style="font-size: 1em">Computer Science Major at UCI</p>
+            <div class="btn-container">
+                <button 
+                class="btn btn-color-2" 
+                onclick="window.open('https://drive.google.com/file/d/1QswEwu4FM2iprqNOsnyf4k2xHToLoaL0/view?usp=sharing')">
+                Download Resume
+                </button>
+                <button 
+                class="btn btn-color-1" 
+                onclick="location.href='./#contact'">
+                Contact Information
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin-social-media-icon-symbol-logo-illustration-free-vector.jpg" 
+                alt="linkedin logo"
+                class="icon" onclick="window.open('https://www.linkedin.com/in/victoria-sun-57362a31a/')">
+                <img src="./assets/616149.webp" 
+                alt="github logo"
+                class="icon" onclick="window.open('https://github.com/victoriasunshine')">
+                <img src="./assets/images.png" 
+                alt="discord logo"
+                class="icon" onclick="window.open('https://discordapp.com/users/586667008561774650')">
+            </div>
+        </div>
             </div>
         </aside>
         <main>
@@ -131,9 +122,7 @@
                         <div class="about-containers">
                             <div class="details-container">
                                 <div class="section-container-t">
-                                    <img src="./assets/pngtree-pink-heart-shape-with-drops-and-splashes-isolated-on-white-background-png-image_11380794.png"
-                                    alt="heart"
-                                    class="icon"/>
+                                    
                                     <h3>Irvine Valley College</h3>
                                 </div>
                                 <p> August 2023 - June 2025
@@ -141,9 +130,7 @@
                             </div>
                             <div class="details-container">
                                 <div class="section-container-t">
-                                    <img src="./assets/pngtree-pink-heart-shape-with-drops-and-splashes-isolated-on-white-background-png-image_11380794.png"
-                                    alt="heart"
-                                    class="icon"/>
+                                    
                                     <h3>University of California, Irvine</h3>
                                 </div>
                                 <p><em style="font-weight: 600;">Computer Science</em>
@@ -265,10 +252,10 @@
             <section id="contact">
                 <div class="gap"></div>
                 <p class="section__text__p1">Get in Touch</p>
-                <p class="title" style="color:rgb(255, 203, 206);">Contact Me</p>
+                <p class="title" style="color:rgb(141,21,21);">Contact Me</p>
                 <div class="contact-info-upper-container">
                     <div class="contact-info-container">
-                        <img src="./assets/987d05f2a18ea8cac4cd6913dd5cfaed.jpg" 
+                        <img src="./assets/email-icon-glyph-icon-for-your-website-mobile-presentation-and-logo-design-vector.jpg" 
                         alt="gmail-icon" 
                         class="icon contact-icon"
                         style="height:3rem;"/>
@@ -277,7 +264,7 @@
                         </a></p>
                     </div>
                     <div class="contact-info-container">
-                        <img src="./assets/images.jpg" 
+                        <img src="./assets/linkedin-social-media-icon-symbol-logo-illustration-free-vector.jpg" 
                         alt="linkedin-icon" 
                         class="icon contact-icon"/>
                         <p><a href="https://www.linkedin.com/in/victoria-sun-57362a31a/"  target="_blank">
@@ -285,7 +272,7 @@
                         </a></p>
                     </div>
                     <div class="contact-info-container">
-                        <img src="./assets/images (1).jpg" 
+                        <img src="./assets/images.png" 
                         alt="Discord-icon" 
                         class="icon contact-icon"/>
                         <p><a href="https://discordapp.com/users/586667008561774650"  target="_blank">
@@ -307,7 +294,7 @@
             </div>
         </nav>
         <p style="font-size: 0.75rem;">Copyright &#169; 2024 Victoria Sun. All Rights Reserved.</p>
-        <img src="./assets/images (2).jpg"
+        <img src="./assets/images(1).png"
         alt="link-to-source-code"
         class="img-gh"
         onclick="window.open('https://github.com/victoriasunshine/portfolio')"/>

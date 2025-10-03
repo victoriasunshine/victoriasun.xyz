@@ -60,16 +60,16 @@ a{
 }
 
 a:hover{
-    color: rgb(255, 153, 206);
+    color: rgb(141, 21, 21);
     text-decoration: underline;
     text-underline-offset: 1rem;
-    text-decoration-color: rgb(255, 203, 206)
+    text-decoration-color: rgb(255, 240, 197)
 }
 
 .logo{
     font-size: 2.5rem;
-    font-family: "Kalnia Glaze";
-    color: rgb(255, 153, 206);
+    font-family: "Expletus Sans";
+    color: rgb(255, 255, 255);
 }
 
 .logo a:hover{
@@ -103,7 +103,7 @@ a:hover{
 .hamburger-icon span{
     width: 100%;
     height:2px;
-    background-color: rgb(255, 153, 206);
+    background-color: rgb(141, 21, 21);
 
     transition: all 0.3 ease-in-out;
 }
@@ -131,7 +131,7 @@ a:hover{
 }
 
 .menu-links a:hover{
-    color: rgb(255, 153, 206);
+    color: rgb(141, 21, 21);
 }
 
 .menu-links li {
@@ -140,7 +140,7 @@ a:hover{
 
 .menu-links.open{
     max-height: 300px;
-    border: rgba(255, 118, 189, 0.315) 0.3rem double;
+    border: rgba(255, 240, 197, 0.315) 0.3rem double;
 
 }
 
@@ -176,6 +176,7 @@ a:hover{
     margin-left: 3rem;
     margin-right:3rem;
     top:7rem;
+    justify-content: center;
 }
 #side-content{
         width: 500px; 
@@ -200,7 +201,7 @@ a:hover{
 }
 .todo-container{
     border-radius: 2rem;
-    border: rgb(255, 153, 206) 0.2rem solid;
+    border: rgb(141, 21, 21) 0.2rem solid;
     padding: 1.5rem;
     border-width: 2px;
     padding:1rem;
@@ -250,6 +251,13 @@ section{
     margin:auto 0;
     
 }
+.section__pic-container_aside{
+    display:flex;
+    height: 250px;
+    width: 250px;
+    gap:10rem;
+    
+}
 
 #home{
     border-radius: 50%;
@@ -277,7 +285,7 @@ section{
 .title{
     font-size: 3rem;
     text-align: center;
-    color:rgb(255, 153, 206);
+    color:rgb(141, 21, 21);
 }
 
 #socials-container{
@@ -311,30 +319,30 @@ section{
 }
 
 .btn-color-1, .btn-color-2{
-    border: rgb(255, 153, 206) 0.1rem solid;
+    border: rgb(141, 21, 21) 0.1rem solid;
 }
 
 .btn-color-1:hover, .btn-color-2:hover{
     cursor:pointer;
 }
 .btn-color-1, .btn-color-2:hover{
-    background: rgb(255, 153, 206);
-    color:white;
+    background: rgb(141, 21, 21);
+    color:rgb(255, 240, 197);
 }
 
 .btn-color-1:hover{
-    background: rgb(255, 185, 224);
-    border:rgb(255,255,255) 0.1rem solid;
+    background: rgb(141, 21, 21);
+    border:rgb(255, 240, 197) 0.1rem solid;
 
 }
 
 .btn-color-2{
     background:none;
-    color:rgb(255, 153, 206);
+    color:rgb(141, 21, 21);
 }
 
 .btn-color-2:hover{
-    border:rgb(255,255,255) 0.1rem solid;
+    border:rgb(255, 240, 197) 0.1rem solid;
 }
 
 /* ABOUT */
@@ -363,7 +371,7 @@ section{
 }
 .details-container{
     border-radius: 2rem;
-    border: rgb(255, 153, 206) 0.2rem solid;
+    border: rgb(141, 21, 21) 0.2rem solid;
     padding: 1.5rem;
     border-width: 2px;
     padding:1rem;
@@ -406,7 +414,7 @@ section{
     gap:5rem;
 }
 #experience .details-container{
-    border:rgba(255, 203, 206, 0) 0.1rem solid;
+    border:rgb(255, 255, 255) 0.1rem solid;
 }
 .experience-details-container{
     justify-content:center;
@@ -414,7 +422,7 @@ section{
     display:flex;
 }
 .experience-sub-title{
-    color:rgb(255, 185, 224);
+    color:rgb(141, 21, 21);
     font-weight: 600;
     font-size: 1.72rem;
     margin-bottom:2rem;
@@ -456,8 +464,8 @@ section{
     margin-bottom:5rem;
 }
 .color-container{
-    border-color:rgb(255, 153, 206);
-    background:rgba(255, 234, 245, 0.315);
+    border-color:rgb(141, 21, 21);
+    background:rgb(255, 255, 255);
 }
 .project-img{
     border-radius:2rem;
@@ -466,10 +474,10 @@ section{
 }
 .project.title{
     margin:1rem;
-    color:rgb(255, 67, 164);
+    color:rgb(141, 21, 21);
 }
 .project-btn{
-    border-color:rgb(255, 185, 224);
+    border-color:rgb(141, 21, 21);
 
 }
 #projects .details-container{
@@ -490,8 +498,8 @@ section{
     display:flex;
     justify-content:center;
     border-radius: 2rem;
-    border:rgb(255, 203, 206) 0.2rem solid;
-    border-color:rgb(255, 203, 206);
+    border:rgb(255, 240, 197) 0.2rem solid;
+    border-color:rgb(255, 240, 197);
     background:(250,250,250);
     margin:2.5rem auto;
     padding:0.5rem;
