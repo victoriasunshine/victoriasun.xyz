@@ -1,13 +1,8 @@
-# Status: Live
-## portfolio
- personal website with all my information and projects
+# Status: Recieving a Makeover
+## Second attempt (incoming)
+- React, Tailwind CSS, Next.js., Framer Motion
+## First attempt (GIT LOG: 420752e OCT 3, 2025)
+- CSS, HTML, JavaScript
+- fully handcoded
+- manual resizing of page when screen size changes
 
- - holds all my projects
- - practice javascript, html, css
-
-## todo
- filled with my current aspirations
-
- - projects
- - goals
- - topics to learn
