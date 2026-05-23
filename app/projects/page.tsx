@@ -9,18 +9,18 @@ const projects = [
     year: "2026",
     role: "Autonomous Navigation Subteam",
     description:
-      "Short project description goes here. Replace this with what you worked on, what tools you used, and what the project explores.",
+      "Legacy is a project team at UCI that builds a rover for the University Rover Challenge. The Autonomous Navigation Subteam is in charge of the software that allows the rover to complete the Autonomous Navigation mission. This mission requires using a camera to navigate terrain by itself and generate panoramas of its surroundings.",
     image: "/images/UCI_Legacy_Robotics_logo.png",
     href: "/projects/legacy-robotics",
     direction: "left",
   },
   {
-    title: "Personal Portfolio",
+    title: "Personal Portfolio V2",
     year: "2026",
     role: "Design + Frontend Development",
     description:
-      "Short project description goes here. Replace this with what you learned while rebuilding your personal website in Next.js.",
-    image: "/images/project-placeholder.jpg",
+      "This is the repo for this website. This is the second iteration of my personal website.",
+    image: "/images/background_home.jpg",
     href: "/projects/personal-portfolio",
     direction: "right",
   },
@@ -54,9 +54,9 @@ export default function ProjectsPage() {
           </h1>
 
           <p className="mt-6 text-sm leading-7 text-neutral-400">
-            Project description intro goes here. You can use this space to frame
-            the page as an archive of technical work, experiments, research, and
-            software projects.
+            This page is meant to expand on my CV and provide 
+            more details of specfic skills I've acquired through each product.
+            Click see more on any project to find out more about each item. 
           </p>
         </section>
 
