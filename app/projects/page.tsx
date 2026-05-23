@@ -24,6 +24,26 @@ const projects = [
     href: "/projects/personal-portfolio",
     direction: "right",
   },
+  {
+      title: "Foundation Fix",
+      year: "2025",
+      role: "Backend Subteam",
+      description:
+        "Worked on face detection algorithm, as well as color sampling algorithm.",
+      image: "/images/Foundation_Fix.png",
+      href: "/projects/personal-portfolio",
+      direction: "left",
+    },
+    {
+      title: "IVC Muon Project",
+      year: "2026",
+      role: "Reasearch, Backend",
+      description:
+        "Build a Muon Detector based on the Cosmic Watch detector. Founding class. Presented at Bay Honors Symposium.",
+      image: "/images/Muon_Project.png",
+      href: "/projects/personal-portfolio",
+      direction: "right",
+    },
 ];
 
 export default function ProjectsPage() {
