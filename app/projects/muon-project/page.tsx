@@ -10,7 +10,7 @@ export default function MuonProjectPage() {
       ]}
       imageSrc="/images/Muon_Project"
       title="IVC Muon Project"
-      description="A redesign of my personal website using Next.js, Tailwind, and more artistic design."
+      description="desc"
       links={[
         { label: "Paper", href: "LINKKKKKKK" },
       ]}
