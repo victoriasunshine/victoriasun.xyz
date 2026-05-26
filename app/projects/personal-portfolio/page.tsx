@@ -16,13 +16,11 @@ export default function PersonalPortfolioPage() {
       ]}
     >
       <p>
-        Long-form writing goes here. This area becomes the project writeup,
-        process notes, technical reflection, screenshots, or blog post body.
+        project writeup
       </p>
 
       <p className="mt-8">
-        You can keep adding paragraphs, headings, images, code notes, or process
-        sections here.
+        etc...
       </p>
     </SplitContentLayout>
   );
