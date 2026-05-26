@@ -2,6 +2,9 @@
 import { BottomDock } from "@/components/navigation/BottomDock";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import { Mail} from "lucide-react";
+import { FaLinkedinIn } from "react-icons/fa6";
+
 
 type TabId = "home" | "projects" | "fun" | "contact";
 
@@ -114,6 +117,25 @@ export default function Home() {
             <p className="mt-5 text-sm whitespace-pre-line leading-7 text-neutral-400">
               {panelContent[activeTab].body}
             </p>
+
+            {activeTab == "contact" && (
+              <div className="mt-8 flex items-center justify-center gap-5">
+              <a
+                href="mailto:victoriasun1230@gmail.com"
+                className="text-neutral-500 transition-colors duration-300 hover:text-[#c49aae]"
+              >
+                <Mail size={18} strokeWidth={1.25} />
+              </a>
+
+              <a
+                href="https://linkedin.com/in/YOURPROFILE"
+                target="_blank"
+                className="text-neutral-500 transition-colors duration-300 hover:text-[#c49aae]"
+              >
+                <FaLinkedinIn size={18} strokeWidth={1.25} />
+              </a>
+              </div>
+            )}
 
             {activeTab !== "contact" && (
               <a

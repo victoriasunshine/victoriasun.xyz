@@ -1,0 +1,27 @@
+import { SplitContentLayout } from "@/components/layout/SplitContentLayout";
+
+export default function [PROJECTTTT]Page() {
+  return (
+    <SplitContentLayout
+      breadcrumbs={[
+        { label: "Victoria Sun", href: "/" },
+        { label: "projects", href: "/projects" },
+        { label: "[NAMEEEE]" },
+      ]}
+      imageSrc="/images/[PATHHHHHHHH]"
+      title="[NAMEEEEEEEEE]"
+      description="A redesign of my personal website using Next.js, Tailwind, and more artistic design."
+      links={[
+        { label: "LABELLLLL", href: "LINKKKKKKK" },
+      ]}
+    >
+      <p>
+        project writeup
+      </p>
+
+      <p className="mt-8">
+        etc...
+      </p>
+    </SplitContentLayout>
+  );
+}
