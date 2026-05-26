@@ -31,17 +31,17 @@ const projects = [
       description:
         "Worked on face detection algorithm, as well as color sampling algorithm.",
       image: "/images/Foundation_Fix.png",
-      href: "/projects/personal-portfolio",
+      href: "/projects/foundation-fix",
       direction: "left",
     },
     {
       title: "IVC Muon Project",
-      year: "2026",
+      year: "2024",
       role: "Reasearch, Backend",
       description:
         "Build a Muon Detector based on the Cosmic Watch detector. Founding class. Presented at Bay Honors Symposium.",
       image: "/images/Muon_Project.png",
-      href: "/projects/personal-portfolio",
+      href: "/projects/muon-project",
       direction: "right",
     },
 ];
