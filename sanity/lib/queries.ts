@@ -6,7 +6,7 @@ export const blogPostsQuery = `*[_type == "blogPost"] | order(publishedAt desc) 
     coverImage
   }`;
 
-  export const creativeProjectsQuery = `*[_type == "creativeProject"] | order(_createdAt desc) {
+export const creativeProjectsQuery = `*[_type == "creativeProject"] | order(_createdAt desc) {
     title,
     "slug": slug.current,
     description,

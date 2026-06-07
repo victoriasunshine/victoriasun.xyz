@@ -14,8 +14,11 @@ const POSTS_PER_PAGE = 10;
 const currentPage = 1;
 
 export default async function FunPage() {
-  const posts = await client.fetch<BlogPostPreview[]>(blogPostsQuery);
-
+  const posts = await client.fetch<BlogPostPreview[]>(
+    blogPostsQuery,
+    {},
+    { next: { revalidate: 0 } }
+  );
   const totalPosts = posts.length;
   const totalPages = Math.ceil(totalPosts / POSTS_PER_PAGE);
 
