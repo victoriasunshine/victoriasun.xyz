@@ -12,3 +12,19 @@ export const creativeProjectsQuery = `*[_type == "creativeProject"] | order(_cre
     description,
     "coverImageUrl": coverImage.asset->url
   }`;
+export const blogPostBySlugQuery = `
+  *[_type == "blogPost" && slug.current == $slug][0] {
+    title,
+    "slug": slug.current,
+    publishedAt,
+    excerpt,
+    body,
+    "coverImageUrl": coverImage.asset->url,
+    pdfs[]{
+      asset->{
+        url,
+        originalFilename
+      }
+    }
+  }
+`;
