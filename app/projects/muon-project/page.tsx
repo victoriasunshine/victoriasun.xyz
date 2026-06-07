@@ -8,7 +8,7 @@ export default function MuonProjectPage() {
         { label: "projects", href: "/projects" },
         { label: "Muon Project" },
       ]}
-      imageSrc="/images/Muon_Project"
+      imageSrc="/images/projects/Muon_Project.png"
       title="IVC Muon Project"
       description="desc"
       links={[

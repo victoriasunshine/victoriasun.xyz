@@ -8,7 +8,7 @@ export default function LegacyRoboticsPage() {
         { label: "projects", href: "/projects" },
         { label: "Robotics" },
       ]}
-      imageSrc="/images/UCI_Legacy_Robotics_logo.png"
+      imageSrc="/images/projects/UCI_Legacy_Robotics_logo.png"
       title="UCI Legacy Robotics"
       description="A redesign of my personal website using Next.js, Tailwind, and more artistic design."
 
