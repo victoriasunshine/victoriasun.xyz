@@ -1,3 +1,3 @@
-export default function PlaylistPage() {
+export default function BlogPostPage() {
     return <main className="min-h-screen bg-neutral-950 text-neutral-100" />;
   }

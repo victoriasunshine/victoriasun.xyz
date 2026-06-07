@@ -10,7 +10,7 @@ const projects = [
     role: "Autonomous Navigation Subteam",
     description:
       "Legacy is a project team at UCI that builds a rover for the University Rover Challenge. The Autonomous Navigation Subteam is in charge of the software that allows the rover to complete the Autonomous Navigation mission. This mission requires using a camera to navigate terrain by itself and generate panoramas of its surroundings.",
-    image: "/images/UCI_Legacy_Robotics_logo.png",
+    image: "/images/projects/UCI_Legacy_Robotics_logo.png",
     href: "/projects/legacy-robotics",
     direction: "left",
   },
@@ -30,7 +30,7 @@ const projects = [
       role: "Backend Subteam",
       description:
         "Worked on face detection algorithm, as well as color sampling algorithm.",
-      image: "/images/Foundation_Fix.png",
+      image: "/images/projects/Foundation_Fix.png",
       href: "/projects/foundation-fix",
       direction: "left",
     },
@@ -40,7 +40,7 @@ const projects = [
       role: "Reasearch, Backend",
       description:
         "Build a Muon Detector based on the Cosmic Watch detector. Founding class. Presented at Bay Honors Symposium.",
-      image: "/images/Muon_Project.png",
+      image: "/images/projects/Muon_Project.png",
       href: "/projects/muon-project",
       direction: "right",
     },

@@ -8,7 +8,7 @@ export default function FoundationFixPage() {
         { label: "projects", href: "/projects" },
         { label: "Foundation Fix" },
       ]}
-      imageSrc="/images/Foundation_Fix"
+      imageSrc="/images/projects/Foundation_Fix.png"
       title="Foundation Fix"
       description="desc"
       links={[
