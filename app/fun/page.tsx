@@ -66,7 +66,7 @@ export default async function FunPage() {
         },
         {
           label: "Book of Month",
-          imageSrc: "/images/fun/bookOfThemonth.jpg",
+          imageSrc: "/images/fun/bookOfTheMonth.jpg",
         },
         {
           label: "Book of All Time",
@@ -74,6 +74,7 @@ export default async function FunPage() {
         },
         {
           label: "2026 Reading List",
+          href: "/fun/readingList",
           imageSrc: "/images/fun/readingList.jpg",
         },
       ]}
