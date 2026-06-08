@@ -69,17 +69,19 @@ export default async function FunPage() {
           imageSrc: "/images/fun/playlists.jpg",
         },
         {
-          label: "Book of Month",
-          imageSrc: "/images/fun/bookOfTheMonth.jpg",
+          label: "Cooking",
+          href: "fun/cooking",
+          imageSrc: "/images/fun/cooking.jpg",
         },
         {
           label: "Book of All Time",
+          href: "fun/books/2026/brothers-karamazov",
           imageSrc: "/images/fun/bookOfAllTime.jpg",
         },
         {
           label: "2026 Reading List",
           href: "/fun/books",
-          imageSrc: "/images/fun/readingList.jpg",
+          imageSrc: "/images/fun/books.jpg",
         },
       ]}
     >
