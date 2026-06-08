@@ -19,6 +19,7 @@ export default async function FunPage() {
     {},
     { next: { revalidate: 0 } }
   );
+  console.log("SANITY POSTS:", posts);
   const totalPosts = posts.length;
   const totalPages = Math.ceil(totalPosts / POSTS_PER_PAGE);
 
@@ -77,7 +78,7 @@ export default async function FunPage() {
         },
         {
           label: "2026 Reading List",
-          href: "/fun/readingList",
+          href: "/fun/books",
           imageSrc: "/images/fun/readingList.jpg",
         },
       ]}

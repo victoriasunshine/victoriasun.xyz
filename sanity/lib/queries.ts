@@ -28,3 +28,31 @@ export const blogPostBySlugQuery = `
     }
   }
 `;
+export const booksByYearQuery = `
+  *[_type == "bookEntry" && finishDate >= $start && finishDate < $end]
+  | order(finishDate asc) {
+    title,
+    "slug": slug.current,
+    author,
+    finishDate,
+    rating,
+    country,
+    era,
+    genre,
+    "hasBody": defined(body[0])
+  }
+`;
+
+export const bookBySlugQuery = `
+  *[_type == "bookEntry" && slug.current == $slug][0] {
+    title,
+    "slug": slug.current,
+    author,
+    finishDate,
+    rating,
+    country,
+    era,
+    genre,
+    body
+  }
+`;

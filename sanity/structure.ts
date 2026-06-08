@@ -7,4 +7,5 @@ export const structure: StructureResolver = (S) =>
       S.documentTypeListItem("blogPost").title("Blog Posts"),
       S.documentTypeListItem("playlist").title("Playlists"),
       S.documentTypeListItem("creativeProject").title("Creative Projects"),
+      S.documentTypeListItem("bookEntry").title("Book Entries"),
     ]);
