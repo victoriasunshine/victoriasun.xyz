@@ -10,7 +10,7 @@ export default function FoundationFixPage() {
       ]}
       imageSrc="/images/projects/Foundation_Fix.png"
       title="Foundation Fix"
-      description="desc"
+      description="Worked on face detection algorithm, as well as color sampling algorithm."
       links={[
         { label: "Paper", href: "/files/engineer_report.pdf" }, 
         { label: "GitHub", href: "https://github.com/dalenas/foundation-fix"},
