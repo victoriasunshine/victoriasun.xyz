@@ -1,5 +1,18 @@
+/*
+app/page.tsx
+Landing Page
+4 options at the bottom of the screen
+----
+home option gives name, resume, and link to github
+projects opens a card that navs to portfolio
+fun opens a card that navs to
+    a personal blog
+    with other features too
+contact opens a card with email and linkedin
+*/
 "use client";
 import { BottomDock } from "@/components/navigation/BottomDock";
+import { SignatureAnimation } from "@/components/SignatureAnimation";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Mail} from "lucide-react";
@@ -29,24 +42,11 @@ const panelContent = {
 export default function Home() {
   const [activeTab, setActiveTab] = useState<TabId>("home");
   return (
-    <main className="relative min-h-screen overflow-hidden bg-neutral-950 text-neutral-100">
+    <main className="relative min-h-screen overflow-hidden">
 
-      {/* Background image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center opacity-55"
-        style={{
-          backgroundImage: "url('/images/background_home.jpg')",
-        }}
-      />
-
-      <div className="absolute inset-0 bg-black/55" />
-     
-      
-      {/* Center readability vignette */}
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,0,0,0.55)_0%,rgba(0,0,0,0.34)_24%,rgba(0,0,0,0)_55%)]" />
       {/* Foreground content */}
-        {/* HOME */}
-        <div className="relative z-10 flex min-h-screen flex-col items-center justify-center">
+      {/* HOME */}
+      <div className="relative z-10 flex min-h-screen flex-col items-center justify-center">
         <AnimatePresence mode="wait">
         {activeTab === "home" ? (
           <motion.div
@@ -54,24 +54,20 @@ export default function Home() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 0.01
-
-             }}
+            transition={{ duration: 0.01 }}
             className="text-center"
           >
           <div className="text-center">
             <div className="text-center">
-              <h1 className="text-5xl font-medium uppercase tracking-[0.14em] text-neutral-100">
-                      Victoria Sun
-              </h1>
+              <SignatureAnimation />
 
-                    
-              <div className="mt-6 space-y-2 text-[11px] uppercase tracking-[0.34em]">
-                <p className="text-neutral-300">Computer Science</p>
 
-                <p className="text-neutral-400">
+              <div className="-mt-6 space-y-2 text-[11px] uppercase tracking-[0.34em]">
+                <p className="text-ink">Computer Science</p>
+
+                <p className="text-ink-light">
                   UC Irvine,{" "}
-                  <span className="text-neutral-500">Donald Bren School</span>
+                  <span className="text-ink-light">Donald Bren School</span>
                 </p>
               </div>
             </div>
@@ -80,21 +76,21 @@ export default function Home() {
             <a
               href="/files/Resume_12_2025.pdf"
               target="_blank"
-              className="text-neutral-500 transition-colors duration-300 hover:text-[#c49aae]"
+              className="text-ink-light transition-colors duration-300 hover:text-dust-blue"
             >
-              CV
+              Resume
             </a>
 
-            <span className="text-neutral-700">•</span>
+            <span className="text-ink-faint">•</span>
 
             <a
               href="https://github.com/victoriasunshine"
               target="_blank"
-              className="text-neutral-500 transition-colors duration-300 hover:text-[#c49aae]"
+              className="text-ink-light transition-colors duration-300 hover:text-dust-blue"
             >
               GitHub
             </a>
-          </div> 
+          </div>
           </div>
           </motion.div>
         ) : (
@@ -104,17 +100,17 @@ export default function Home() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.45 }}
-            className="max-w-xl rounded-3xl border border-white/10 bg-black/30 px-10 py-8 text-center backdrop-blur-xl"
+            className="max-w-xl rounded-3xl border border-ink-faint/40 bg-cream-dark/80 px-10 py-8 text-center backdrop-blur-sm"
           >
-            <p className="text-[10px] uppercase tracking-[0.38em] text-[#c49aae]">
+            <p className="text-[10px] uppercase tracking-[0.38em] text-dust-blue">
               {panelContent[activeTab].eyebrow}
             </p>
 
-            <h2 className="mt-4 font-serif text-4xl italic tracking-[0.12em] text-neutral-100">
+            <h2 className="mt-4 font-serif text-4xl italic tracking-[0.12em] text-ink">
               {panelContent[activeTab].title}
             </h2>
 
-            <p className="mt-5 text-sm whitespace-pre-line leading-7 text-neutral-400">
+            <p className="mt-5 text-sm whitespace-pre-line leading-7 text-ink-light">
               {panelContent[activeTab].body}
             </p>
 
@@ -122,15 +118,15 @@ export default function Home() {
               <div className="mt-8 flex items-center justify-center gap-5">
               <a
                 href="mailto:victoriasun1230@gmail.com"
-                className="text-neutral-500 transition-colors duration-300 hover:text-[#c49aae]"
+                className="text-ink-light transition-colors duration-300 hover:text-dust-blue"
               >
                 <Mail size={18} strokeWidth={1.25} />
               </a>
 
               <a
-                href="https://linkedin.com/in/YOURPROFILE"
+                href="https://linkedin.com/in/victoriasun1230"
                 target="_blank"
-                className="text-neutral-500 transition-colors duration-300 hover:text-[#c49aae]"
+                className="text-ink-light transition-colors duration-300 hover:text-dust-blue"
               >
                 <FaLinkedinIn size={18} strokeWidth={1.25} />
               </a>
@@ -140,7 +136,7 @@ export default function Home() {
             {activeTab !== "contact" && (
               <a
                 href={`/${activeTab}`}
-                className="mt-8 inline-block text-[10px] uppercase tracking-[0.32em] text-neutral-400 transition-colors hover:text-[#c49aae]"
+                className="mt-8 inline-block text-[10px] uppercase tracking-[0.32em] text-ink-light transition-colors hover:text-dust-blue"
               >
                 See More
               </a>

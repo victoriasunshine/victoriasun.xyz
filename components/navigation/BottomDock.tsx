@@ -16,7 +16,7 @@ type BottomDockProps = {
 export function BottomDock({ activeTab, setActiveTab }: BottomDockProps) {
 
   return (
-    <nav className="fixed bottom-10 left-1/2 z-50 -translate-x-1/2 rounded-full border border-white/10 bg-neutral-950/30 px-4 py-2 sm:px-6 md:px-7 backdrop-blur-xl shadow-[0_0_40px_rgba(255,255,255,0.03)]">
+    <nav className="fixed bottom-10 left-1/2 z-50 -translate-x-1/2 rounded-full border border-ink-faint/40 bg-cream-dark/80 px-4 py-2 sm:px-6 md:px-7 backdrop-blur-sm shadow-sm">
         <ul className="flex items-center gap-6 sm:gap-10 md:gap-16">
             {navItems.map((item) => {
           const isActive = item.id === activeTab;
@@ -33,8 +33,8 @@ export function BottomDock({ activeTab, setActiveTab }: BottomDockProps) {
                   transition-colors duration-300
                   ${
                     isActive
-                      ? "text-[#c49aae]"
-                      : "text-neutral-400 hover:text-neutral-200"
+                      ? "text-dust-blue"
+                      : "text-ink-light hover:text-ink"
                   }
                 `}
               >

@@ -11,14 +11,50 @@ export default function LegacyRoboticsPage() {
       imageSrc="/images/projects/UCI_Legacy_Robotics_logo.png"
       title="UCI Legacy Robotics"
       description="A redesign of my personal website using Next.js, Tailwind, and more artistic design."
-
+      links={[
+        { label: "GitHub", href: "https://github.com/UCI-Legacy-Robotics/URC-2026" },
+      ]}
     >
       <p>
-        project writeup
+        The rover platform&apos;s ZED2 camera captures a limited field of view per
+        frame, which constrains situational awareness during operation — an operator
+        can only see a narrow slice of the environment at a time. The team needed a way
+        to combine multiple overlapping frames into a single wide-field panorama, both
+        for better real-time visualization and as groundwork for future mapping
+        capabilities. The existing tooling only supported offline, batch-style
+        processing of pre-saved images, which meant it couldn&apos;t be used against the
+        rover&apos;s live camera feed.
       </p>
 
       <p className="mt-8">
-        etc...
+        I own the image stitching pipeline end-to-end. Each frame is corrected with a
+        cylindrical projection warp, then processed with SIFT feature detection and a
+        brute-force matcher (with Lowe&apos;s ratio test) to find correspondences between
+        adjacent frames. A RANSAC-based homography is computed for each pair and chained
+        outward from a center anchor frame, so the full sequence aligns into one
+        coordinate space. The final panorama is composed with weighted-average blending
+        across overlapping regions, followed by connected-component analysis and
+        inpainting to clean up small gaps left after warping and cropping.
+      </p>
+
+      <p className="mt-8">
+        To make this usable against the live system rather than a one-off script, I
+        designed and implemented a ROS2 node that wraps the pipeline: it subscribes to
+        the rover&apos;s ZED2 image topic, maintains a rolling buffer of recent frames,
+        and exposes an on-demand service that triggers a stitch over whatever&apos;s
+        currently buffered, publishing the resulting panorama back onto the ROS2 graph.
+        This moved the pipeline from a batch/offline tool into something that integrates
+        directly with the rover&apos;s operating stack, alongside its other subsystems
+        (arm, drive, embedded).
+      </p>
+
+      <p className="mt-8">
+        Known limitation: the current blending step averages overlapping pixels rather
+        than using a seam-aware blend, which produces visible ghosting when there&apos;s
+        parallax or motion between source frames rather than pure camera rotation — a
+        natural next step is seam-based or multi-band blending. This work is ongoing;
+        next milestones include quantifying stitching accuracy and latency under live
+        operating conditions.
       </p>
     </SplitContentLayout>
   );
