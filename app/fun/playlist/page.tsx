@@ -1,4 +1,4 @@
-import Link from "next/link";
+/*import Link from "next/link";
 import { client } from "@/sanity/lib/client";
 import { currentPlaylistQuery } from "@/sanity/lib/queries";
 import { getPlaylistTracks } from "@/sanity/lib/spotify";
@@ -134,7 +134,24 @@ export default async function PlaylistPage() {
           )}
         </div>
 
+         <div className="mt-10 flex justify-between text-[10px] uppercase tracking-[0.32em] text-ink-light">
+          <Link href="/fun/playlist/archive" className="hover:text-dust-blue">
+            Archives
+          </Link>
+
+          {playlist?.spotifyUrl && (
+            <a
+              href={playlist.spotifyUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-dust-blue"
+            >
+              Open in Spotify
+            </a>
+          )}
+        </div> 
       </section>
     </main>
   );
 }
+*/
