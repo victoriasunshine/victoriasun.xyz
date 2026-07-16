@@ -1,3 +1,24 @@
+import Link from "next/link";
+
+export default function PlaylistArchivePage() {
+  return (
+    <main className="min-h-screen px-8 pt-24 pb-16">
+      <nav className="fixed left-8 top-8 z-20 bg-cream/80 px-3 py-2 text-[10px] uppercase tracking-[0.22em] text-ink-light backdrop-blur-sm">
+        <Link href="/" className="transition-colors hover:text-dust-blue">Victoria Sun</Link>
+        <span className="mx-2 text-ink-faint">/</span>
+        <Link href="/fun" className="transition-colors hover:text-dust-blue">For Fun</Link>
+        <span className="mx-2 text-ink-faint">/</span>
+        <Link href="/fun/playlist" className="transition-colors hover:text-dust-blue">Playlist</Link>
+        <span className="mx-2 text-ink-faint">/</span>
+        <span className="font-serif italic text-dust-blue">Archive</span>
+      </nav>
+      <div className="mx-auto max-w-3xl pt-16 text-sm text-ink-light">
+        Coming soon.
+      </div>
+    </main>
+  );
+}
+
 /*import Link from "next/link";
 import { client } from "@/sanity/lib/client";
 import { currentPlaylistQuery } from "@/sanity/lib/queries";
