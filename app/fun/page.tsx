@@ -1,4 +1,4 @@
-import Link from "next/link";
+/*import Link from "next/link";
 import { SplitContentLayout } from "@/components/layout/SplitContentLayout";
 import { client } from "@/sanity/lib/client";
 import { blogPostsQuery } from "@/sanity/lib/queries";
@@ -143,3 +143,4 @@ export default async function FunPage() {
     </SplitContentLayout>
   );
 }
+*/
