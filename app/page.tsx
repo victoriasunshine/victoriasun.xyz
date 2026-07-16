@@ -74,7 +74,7 @@ export default function Home() {
           {/* buttons */}
           <div className="mt-10 flex items-center justify-center gap-8 text-[11px] uppercase tracking-[0.3em]">
             <a
-              href="/files/Resume_12_2025.pdf"
+              href="/files/Resume.pdf"
               target="_blank"
               className="text-ink-light transition-colors duration-300 hover:text-dust-blue"
             >
