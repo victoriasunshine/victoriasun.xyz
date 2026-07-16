@@ -14,12 +14,12 @@ export function PortableTextRenderer({ value }: { value: any }) {
               target="_blank"
               rel="noopener noreferrer"
               className="
-                text-[#c49aae]
+                text-dust-blue
                 underline
                 underline-offset-4
-                decoration-[#c49aae]/50
+                decoration-dust-blue/50
                 transition-colors
-                hover:text-[#e3bfd0]
+                hover:text-ink
               "
             >
               {children}
@@ -44,7 +44,7 @@ export function PortableTextRenderer({ value }: { value: any }) {
                 <img
                   src={imageUrl}
                   alt=""
-                  className="mx-auto max-h-[520px] w-auto max-w-full border border-white/10 object-contain"
+                  className="mx-auto max-h-[520px] w-auto max-w-full border border-ink-faint/30 object-contain"
                 />
               </figure>
             );
@@ -52,17 +52,17 @@ export function PortableTextRenderer({ value }: { value: any }) {
         },
         block: {
           normal: ({ children }) => (
-            <p className="my-6 text-sm leading-8 text-neutral-300">
+            <p className="my-6 text-sm leading-8 text-ink">
               {children}
             </p>
           ),
           h2: ({ children }) => (
-            <h2 className="mt-14 mb-5 text-2xl uppercase tracking-[0.16em] text-neutral-100">
+            <h2 className="mt-14 mb-5 text-2xl uppercase tracking-[0.16em] text-ink">
               {children}
             </h2>
           ),
           h3: ({ children }) => (
-            <h3 className="mt-10 mb-4 font-serif text-xl italic tracking-[0.08em] text-[#c49aae]">
+            <h3 className="mt-10 mb-4 font-serif text-xl italic tracking-[0.08em] text-dust-blue">
               {children}
             </h3>
           ),

@@ -35,25 +35,26 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   if (!post) notFound();
 
   return (
-    <main className="min-h-screen bg-neutral-950 text-neutral-100">
+    <main className="min-h-screen">
       {/* floating breadcrumbs */}
-      <nav className="fixed left-8 top-8 z-30 bg-neutral-950/40 px-3 py-2 text-[10px] uppercase tracking-[0.22em] text-neutral-500 backdrop-blur-sm">
-        <Link href="/" className="transition-colors hover:text-[#c49aae]">
+      <nav className="fixed left-8 top-8 z-30 bg-cream/80 px-3 py-2 text-[10px] uppercase tracking-[0.22em] text-ink-light backdrop-blur-sm">
+        <Link href="/" className="transition-colors hover:text-dust-blue">
           Victoria Sun
         </Link>
-        <span className="mx-2 text-neutral-700">/</span>
-        <Link href="/fun" className="transition-colors hover:text-[#c49aae]">
+        <span className="mx-2 text-ink-faint">/</span>
+        <Link href="/fun" className="transition-colors hover:text-dust-blue">
           For Fun
         </Link>
-        <span className="mx-2 text-neutral-700">/</span>
-        <span className="font-serif italic text-[#c49aae]">Blog Posts        
-          <span className="mx-2 text-neutral-700">/</span>
-          { post.title }
+        <span className="mx-2 text-ink-faint">/</span>
+        <span className="font-serif italic text-dust-blue">
+          Blog Posts
+          <span className="mx-2 text-ink-faint">/</span>
+          {post.title}
         </span>
       </nav>
 
-      {/* hero */}
-      <section className="relative flex min-h-[55vh] items-end overflow-hidden border-b border-white/10">
+      {/* hero — text stays light since dark overlay is over photo */}
+      <section className="relative flex min-h-[55vh] items-end overflow-hidden border-b border-ink-faint/30">
         {post.coverImageUrl && (
           <img
             src={post.coverImageUrl}
@@ -65,7 +66,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         <div className="absolute inset-0 bg-black/55" />
 
         <div className="relative z-10 mx-auto w-full max-w-4xl px-8 pb-16 pt-28">
-          <p className="text-[10px] uppercase tracking-[0.34em] text-[#c49aae]">
+          <p className="text-[10px] uppercase tracking-[0.34em] text-dust-blue">
             {post.publishedAt
               ? new Date(post.publishedAt).toLocaleDateString("en-US", {
                   month: "long",
@@ -75,20 +76,19 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               : "Undated"}
           </p>
 
-          <h1 className="mt-6 text-4xl uppercase tracking-[0.18em] text-neutral-100 md:text-5xl">
+          <h1 className="mt-6 text-4xl uppercase tracking-[0.18em] text-cream md:text-5xl">
             {post.title}
           </h1>
-
         </div>
       </section>
 
       {/* body */}
       <article className="mx-auto max-w-3xl px-8 py-16">
-
         {post.body && <PortableTextRenderer value={post.body} />}
+
         {post.pdfs && post.pdfs.length > 0 && (
-          <section className="mt-16 border-t border-white/10 pt-8">
-            <h2 className="text-[10px] uppercase tracking-[0.34em] text-[#c49aae]">
+          <section className="mt-16 border-t border-ink-faint/30 pt-8">
+            <h2 className="text-[10px] uppercase tracking-[0.34em] text-dust-blue">
               Attachments
             </h2>
 
@@ -99,7 +99,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                   href={pdf.asset?.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block border border-[#c49aae]/40 px-4 py-3 text-[10px] uppercase tracking-[0.24em] text-neutral-400 transition-colors hover:bg-[#c49aae] hover:text-neutral-950"
+                  className="block border border-dust-blue/40 px-4 py-3 text-[10px] uppercase tracking-[0.24em] text-ink-light transition-colors hover:bg-dust-blue hover:text-cream"
                 >
                   {pdf.asset?.originalFilename ?? "PDF"}
                 </a>

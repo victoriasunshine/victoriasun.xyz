@@ -19,7 +19,7 @@ export default async function FunPage() {
     {},
     { next: { revalidate: 0 } }
   );
-  console.log("SANITY POSTS:", posts);
+
   const totalPosts = posts.length;
   const totalPages = Math.ceil(totalPosts / POSTS_PER_PAGE);
 
@@ -69,17 +69,19 @@ export default async function FunPage() {
           imageSrc: "/images/fun/playlists.jpg",
         },
         {
-          label: "Book of Month",
-          imageSrc: "/images/fun/bookOfTheMonth.jpg",
+          label: "Cooking",
+          href: "fun/cooking",
+          imageSrc: "/images/fun/cooking.jpg",
         },
         {
           label: "Book of All Time",
+          href: "fun/books/2026/brothers-karamazov",
           imageSrc: "/images/fun/bookOfAllTime.jpg",
         },
         {
           label: "2026 Reading List",
           href: "/fun/books",
-          imageSrc: "/images/fun/readingList.jpg",
+          imageSrc: "/images/fun/books.jpg",
         },
       ]}
     >
@@ -87,9 +89,9 @@ export default async function FunPage() {
         {visiblePosts.map((post) => (
           <article
             key={post.slug}
-            className="border-b border-neutral-800 pb-10"
+            className="border-b border-ink-faint/40 pb-10"
           >
-            <p className="text-[10px] uppercase tracking-[0.32em] text-[#c49aae]">
+            <p className="text-[10px] uppercase tracking-[0.32em] text-dust-blue">
               {post.publishedAt
                 ? new Date(post.publishedAt).toLocaleDateString("en-US", {
                     month: "long",
@@ -99,19 +101,19 @@ export default async function FunPage() {
                 : "Undated"}
             </p>
 
-            <h2 className="mt-4 text-2xl uppercase tracking-[0.14em] text-neutral-100">
+            <h2 className="mt-4 text-2xl uppercase tracking-[0.14em] text-ink">
               {post.title}
             </h2>
 
             {post.excerpt && (
-              <p className="mt-5 max-w-2xl text-sm leading-8 text-neutral-400">
+              <p className="mt-5 max-w-2xl text-sm leading-8 text-ink-light">
                 {post.excerpt}
               </p>
             )}
 
             <Link
               href={`/fun/blog/${post.slug}`}
-              className="mt-7 inline-block text-[10px] uppercase tracking-[0.32em] text-neutral-500 transition-colors hover:text-[#c49aae]"
+              className="mt-7 inline-block text-[10px] uppercase tracking-[0.32em] text-ink-light transition-colors hover:text-dust-blue"
             >
               See More
             </Link>
@@ -119,9 +121,9 @@ export default async function FunPage() {
         ))}
 
         {shouldShowPagination && (
-          <div className="flex justify-between pt-4 text-[10px] uppercase tracking-[0.32em] text-neutral-500">
+          <div className="flex justify-between pt-4 text-[10px] uppercase tracking-[0.32em] text-ink-light">
             {hasPreviousPage ? (
-              <button className="border border-[#c49aae]/40 px-4 py-2 transition-colors hover:bg-[#c49aae] hover:text-neutral-950">
+              <button className="border border-dust-blue/40 px-4 py-2 transition-colors hover:bg-dust-blue hover:text-cream">
                 ←
               </button>
             ) : (
@@ -129,7 +131,7 @@ export default async function FunPage() {
             )}
 
             {hasNextPage ? (
-              <button className="border border-[#c49aae]/40 px-4 py-2 transition-colors hover:bg-[#c49aae] hover:text-neutral-950">
+              <button className="border border-dust-blue/40 px-4 py-2 transition-colors hover:bg-dust-blue hover:text-cream">
                 →
               </button>
             ) : (

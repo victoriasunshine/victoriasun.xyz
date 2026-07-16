@@ -25,62 +25,62 @@ const projects = [
     direction: "right",
   },
   {
-      title: "Foundation Fix",
-      year: "2025",
-      role: "Backend Subteam",
-      description:
-        "Worked on face detection algorithm, as well as color sampling algorithm.",
-      image: "/images/projects/Foundation_Fix.png",
-      href: "/projects/foundation-fix",
-      direction: "left",
-    },
-    {
-      title: "IVC Muon Project",
-      year: "2024",
-      role: "Reasearch, Backend",
-      description:
-        "Build a Muon Detector based on the Cosmic Watch detector. Founding class. Presented at Bay Honors Symposium.",
-      image: "/images/projects/Muon_Project.png",
-      href: "/projects/muon-project",
-      direction: "right",
-    },
+    title: "Foundation Fix",
+    year: "2025",
+    role: "Backend Subteam",
+    description:
+      "Worked on face detection algorithm, as well as color sampling algorithm.",
+    image: "/images/projects/Foundation_Fix.png",
+    href: "/projects/foundation-fix",
+    direction: "left",
+  },
+  {
+    title: "IVC Muon Project",
+    year: "2024",
+    role: "Reasearch, Backend",
+    description:
+      "Build a Muon Detector based on the Cosmic Watch detector. Founding class. Presented at Bay Honors Symposium.",
+    image: "/images/projects/Muon_Project.png",
+    href: "/projects/muon-project",
+    direction: "right",
+  },
 ];
 
 export default function ProjectsPage() {
   return (
-    <main className="min-h-screen bg-neutral-950 px-8 py-8 text-neutral-100 md:px-16">
+    <main className="min-h-screen px-8 py-8 md:px-16">
       {/* Header */}
       <header>
         <div className="flex items-center gap-3 text-sm uppercase tracking-[0.18em]">
           <Link
             href="/"
-            className="text-neutral-100 transition-colors duration-300 hover:text-neutral-300"
+            className="text-ink transition-colors duration-300 hover:text-ink-light"
           >
             Victoria Sun
           </Link>
 
-          <span className="text-neutral-600">\</span>
+          <span className="text-ink-faint">\</span>
 
-          <span className="font-serif italic text-[#c49aae]">projects</span>
+          <span className="font-serif italic text-dust-blue">projects</span>
         </div>
 
         <section className="mt-28 max-w-2xl">
-          <p className="text-[11px] uppercase tracking-[0.34em] text-neutral-500">
+          <p className="text-[11px] uppercase tracking-[0.34em] text-ink-light">
             Selected Works
           </p>
 
-          <h1 className="mt-5 text-4xl uppercase tracking-[0.12em] text-neutral-100 md:text-5xl">
+          <h1 className="mt-5 text-4xl uppercase tracking-[0.12em] text-ink md:text-5xl">
             Projects
           </h1>
 
-          <p className="mt-6 text-sm leading-7 text-neutral-400">
-            This page is meant to expand on my CV and provide 
-            more details of specfic skills I've acquired through each product.
-            Click see more on any project to find out more about each item. 
+          <p className="mt-6 text-sm leading-7 text-ink-light">
+            This page is meant to expand on my CV and provide
+            more details of specific skills I've acquired through each product.
+            Click see more on any project to find out more about each item.
           </p>
         </section>
 
-        <div className="mt-16 h-px w-full bg-neutral-800" />
+        <div className="mt-16 h-px w-full bg-ink-faint/40" />
       </header>
 
       {/* Project list */}
@@ -90,57 +90,57 @@ export default function ProjectsPage() {
 
           return (
             <motion.article
-                key={project.title}
-                initial={{ opacity: 0, x: fromLeft ? -80 : 80 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true, amount: 0.35 }}
-                transition={{ duration: 0.7, ease: "easeOut" }}
-                className="border-b border-neutral-800 py-10"
-                >
-                <div
-                    className={`grid max-w-5xl gap-10 md:items-center ${
-                    fromLeft
-                        ? "md:grid-cols-[420px_1fr]"
-                        : "ml-auto md:grid-cols-[1fr_420px]"
-                    }`}
-                >
-                    {/* Image */}
-                    <div className={`${fromLeft ? "" : "md:order-2"}`}>
-                    <div className="aspect-[4/3] w-full max-w-[420px] bg-neutral-900/80">
-                        <img
-                        src={project.image}
-                        alt=""
-                        className="h-full w-full object-cover opacity-70 grayscale"
-                        />
-                    </div>
-                    </div>
-
-                    {/* Text */}
-                    <div className={`${fromLeft ? "" : "md:order-1"}`}>
-                    <h2 className="text-2xl uppercase tracking-[0.12em] text-neutral-100">
-                        {project.title}{" "}
-                        <span className="font-serif italic tracking-normal text-[#c49aae]">
-                        | {project.year}
-                        </span>
-                    </h2>
-
-                    <p className="mt-4 text-[11px] uppercase tracking-[0.28em] text-neutral-500">
-                        {project.role}
-                    </p>
-
-                    <p className="mt-6 max-w-xl text-sm leading-7 text-neutral-400">
-                        {project.description}
-                    </p>
-
-                    <Link
-                        href={project.href}
-                        className="mt-8 inline-block text-[10px] uppercase tracking-[0.32em] text-neutral-500 transition-colors duration-300 hover:text-[#c49aae]"
-                    >
-                        See More
-                    </Link>
-                    </div>
+              key={project.title}
+              initial={{ opacity: 0, x: fromLeft ? -80 : 80 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, amount: 0.35 }}
+              transition={{ duration: 0.7, ease: "easeOut" }}
+              className="border-b border-ink-faint/40 py-10"
+            >
+              <div
+                className={`grid max-w-5xl gap-10 md:items-center ${
+                  fromLeft
+                    ? "md:grid-cols-[420px_1fr]"
+                    : "ml-auto md:grid-cols-[1fr_420px]"
+                }`}
+              >
+                {/* Image */}
+                <div className={`${fromLeft ? "" : "md:order-2"}`}>
+                  <div className="aspect-[4/3] w-full max-w-[420px] bg-cream-dark/80">
+                    <img
+                      src={project.image}
+                      alt=""
+                      className="h-full w-full object-cover opacity-70"
+                    />
+                  </div>
                 </div>
-                </motion.article>
+
+                {/* Text */}
+                <div className={`${fromLeft ? "" : "md:order-1"}`}>
+                  <h2 className="text-2xl uppercase tracking-[0.12em] text-ink">
+                    {project.title}{" "}
+                    <span className="font-serif italic tracking-normal text-dust-blue">
+                      | {project.year}
+                    </span>
+                  </h2>
+
+                  <p className="mt-4 text-[11px] uppercase tracking-[0.28em] text-ink-light">
+                    {project.role}
+                  </p>
+
+                  <p className="mt-6 max-w-xl text-sm leading-7 text-ink-light">
+                    {project.description}
+                  </p>
+
+                  <Link
+                    href={project.href}
+                    className="mt-8 inline-block text-[10px] uppercase tracking-[0.32em] text-ink-light transition-colors duration-300 hover:text-dust-blue"
+                  >
+                    See More
+                  </Link>
+                </div>
+              </div>
+            </motion.article>
           );
         })}
       </section>

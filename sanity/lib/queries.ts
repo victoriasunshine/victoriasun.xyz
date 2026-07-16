@@ -56,3 +56,30 @@ export const bookBySlugQuery = `
     body
   }
 `;
+export const currentPlaylistQuery = `
+  *[_type == "playlist" && isCurrent == true][0] {
+    month,
+    year,
+    spotifyUrl,
+    spotifyPlaylistId,
+    "coverImageUrl": coverImage.asset->url
+  }
+`;
+
+export const playlistArchiveQuery = `
+  *[_type == "playlist"] | order(year desc, month desc) {
+    month,
+    year,
+    "slug": slug.current,
+    spotifyUrl,
+    "coverImageUrl": coverImage.asset->url
+  }
+`;
+export const playlistBySlugQuery = `
+  *[_type == "playlist" && slug.current == $slug][0] {
+    month,
+    year,
+    spotifyUrl,
+    "coverImageUrl": coverImage.asset->url
+  }
+`;
