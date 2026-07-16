@@ -10,7 +10,7 @@ export default function MuonProjectPage() {
       ]}
       imageSrc="/images/projects/Muon_Project.png"
       title="IVC Muon Project"
-      description="desc"
+      description="Build a Muon Detector based on the Cosmic Watch detector. Founding class. Presented at Bay Honors Symposium."
       links={[
         { label: "Paper", href: "/files/Muon_paper.pdf" },
       ]}

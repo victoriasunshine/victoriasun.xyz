@@ -10,7 +10,7 @@ export default function LegacyRoboticsPage() {
       ]}
       imageSrc="/images/projects/UCI_Legacy_Robotics_logo.png"
       title="UCI Legacy Robotics"
-      description="A redesign of my personal website using Next.js, Tailwind, and more artistic design."
+      description="Legacy is a project team at UCI that builds a rover for the University Rover Challenge. The Autonomous Navigation Subteam is in charge of the software that allows the rover to complete the Autonomous Navigation mission. This mission requires using a camera to navigate terrain by itself and generate panoramas of its surroundings."
       links={[
         { label: "GitHub", href: "https://github.com/UCI-Legacy-Robotics/URC-2026" },
       ]}
