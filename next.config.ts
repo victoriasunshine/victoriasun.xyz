@@ -5,8 +5,8 @@ const nextConfig: NextConfig = {
   async rewrites() {
     return {
       beforeFiles: [
-        { source: "/projects/book-tracker", destination: "https://book-tracker-xyz.vercel.app/projects/book-tracker" },
-        { source: "/projects/book-tracker/:path*", destination: "https://book-tracker-xyz.vercel.app/projects/book-tracker/:path*" },
+        { source: "/projects/book-tracker", destination: "https://book-tracker-abc.vercel.app/projects/book-tracker" },
+        { source: "/projects/book-tracker/:path*", destination: "https://book-tracker-abc.vercel.app/projects/book-tracker/:path*" },
       ],
     };
   },
