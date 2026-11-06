@@ -5,6 +5,16 @@ import { motion } from "framer-motion";
 
 const projects = [
   {
+    title: "Book Tracker",
+    year: "2026",
+    role: "Solo Project",
+    description:
+      "Reimaging of Fable and Goodreads. A web application that allows users to track their reading progress, write reviews, and discover new books.",
+    image: "/images/projects/BookTracker.png",
+    href: "/projects/book-tracker-notes",
+    direction: "right",
+  },
+  {
     title: "UCI Legacy Robotics",
     year: "2026",
     role: "Autonomous Navigation Subteam",
